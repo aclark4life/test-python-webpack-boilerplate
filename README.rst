@@ -13,8 +13,8 @@ Install
     make npm-install
     make serve
 
+.. image:: screenshot.png
+
 Thank you Michael Yin!
 
 - https://github.com/AccordBox/python-webpack-boilerplate
-
-.. image:: screenshot.png
