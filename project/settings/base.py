@@ -170,3 +170,11 @@ ALLOWED_HOSTS = ['*']
 import dj_database_url
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgres://:@:/project')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "frontend/build"),
+]
+
+WEBPACK_LOADER = {
+    "MANIFEST_FILE": os.path.join(BASE_DIR, "frontend/build/manifest.json"),
+}
