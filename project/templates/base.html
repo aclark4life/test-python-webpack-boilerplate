@@ -17,8 +17,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/project.css' %}">
+        {# Global stylesheets moved to webpack loader #}
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -30,8 +29,7 @@
 
         {% block content %}{% endblock %}
 
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/project.js' %}"></script>
+        {# Global javascript moved to webpack loader #}
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
